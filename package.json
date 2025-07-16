@@ -1,0 +1,23 @@
+{
+  "name": "16-07-25",
+  "version": "1.0.0",
+  "description": "This app is deployed on a local Kubernetes cluster using Minikube.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhishek-rao2/node-api-k8s-deployment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abhishek-rao2/node-api-k8s-deployment/issues"
+  },
+  "homepage": "https://github.com/Abhishek-rao2/node-api-k8s-deployment#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

@@ -10,3 +10,15 @@ Accessed via:
 minikube service node-api-service
 
 ```
+
+## 📸 Screenshots
+
+### ✅ 1. Pod Running
+![kubectl get pods](./screenshots/pods.png)
+
+### ✅ 2. Service Exposed
+![kubectl get svc](./screenshots/svc.png)
+
+### ✅ 3. App in Browser
+![App Output](./screenshots/browser.png)
+

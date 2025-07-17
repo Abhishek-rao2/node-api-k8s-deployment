@@ -1,15 +1,31 @@
-## 📦 Kubernetes Deployment
+# Node.js API Kubernetes Deployment
 
-This app is deployed on a local Kubernetes cluster using Minikube.
+This project demonstrates a CI/CD pipeline with GitHub Actions, Docker, and Kubernetes (Minikube).
 
-- `deployment.yaml`: Runs 1 pod using Docker image `abhidochub123/node-api-app`
-- `service.yaml`: Exposes the app via NodePort `30036`
+## 🧪 Tech Stack
+- Node.js + Express
+- Docker & DockerHub
+- GitHub Actions
+- Kubernetes (Minikube)
+- kubectl
 
-Accessed via:
-```bash
-minikube service node-api-service
+## ⚙️ What It Does
+- Dockerizes a Node.js app
+- Pushes it to DockerHub using GitHub Actions
+- Deploys to local K8s (Minikube) with `kubectl`
 
-```
+## 📸 Proof (Screenshots)
+All screenshots are under `/screenshots/`:
+- ✅ Pods running
+- ✅ Service exposed
+- ✅ App accessed in browser
+
+## 🔗 DockerHub
+[View Docker Image](https://hub.docker.com/r/abhidochub123/node-api-app)
+
+## 🚀 Live Deployment (Minikube only)
+Accessible via NodePort:
+
 
 ## 📸 Screenshots
 

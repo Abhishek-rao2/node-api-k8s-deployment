@@ -31,11 +31,6 @@ This project demonstrates a complete CI/CD pipeline to deploy a containerized No
 
 ---
 
-## 📸 Screenshots (Optional)
-*Add screenshots of your GitHub Action pipeline working, or terminal showing `kubectl get pods`*
-
----
-
 ## 📦 DockerHub Link
 [DockerHub Repo](https://hub.docker.com/repository/docker/abhidochub123/node-api-app)
 

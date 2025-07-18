@@ -1,30 +1,59 @@
-# Node.js API Kubernetes Deployment
+# 🚀 Node.js API Kubernetes Deployment (CI/CD with GitHub Actions)
 
-This project demonstrates a CI/CD pipeline with GitHub Actions, Docker, and Kubernetes (Minikube).
+This project demonstrates a complete CI/CD pipeline to deploy a containerized Node.js API onto a Kubernetes cluster using GitHub Actions and Docker.
 
-## 🧪 Tech Stack
-- Node.js + Express
-- Docker & DockerHub
-- GitHub Actions
-- Kubernetes (Minikube)
-- kubectl
+---
 
-## ⚙️ What It Does
-- Dockerizes a Node.js app
-- Pushes it to DockerHub using GitHub Actions
-- Deploys to local K8s (Minikube) with `kubectl`
+## 🛠️ Tech Stack
+- **Node.js**
+- **Docker**
+- **GitHub Actions**
+- **Kubernetes (Minikube)**
+- **DockerHub**
 
-## 📸 Proof (Screenshots)
-All screenshots are under `/screenshots/`:
-- ✅ Pods running
-- ✅ Service exposed
-- ✅ App accessed in browser
+---
 
-## 🔗 DockerHub
-[View Docker Image](https://hub.docker.com/r/abhidochub123/node-api-app)
+## ⚙️ CI/CD Pipeline Flow
 
-## 🚀 Live Deployment (Minikube only)
-Accessible via NodePort:
+1. Developer pushes code to GitHub
+2. GitHub Actions triggers pipeline:
+   - Lints and builds the Docker image
+   - Pushes the image to DockerHub
+3. Kubernetes Deployment YAMLs are applied manually/minikube for now
+
+---
+
+## 📦 Files Structure
+
+- `Dockerfile` – Container setup
+- `.github/workflows/main.yml` – GitHub Actions pipeline
+- `k8s/` – Contains `deployment.yaml`, `service.yaml`
+
+---
+
+## 📸 Screenshots (Optional)
+*Add screenshots of your GitHub Action pipeline working, or terminal showing `kubectl get pods`*
+
+---
+
+## 📦 DockerHub Link
+[DockerHub Repo](https://hub.docker.com/repository/docker/abhidochub123/node-api-app)
+
+---
+
+## 📄 How to Deploy
+
+```bash
+# Build locally
+docker build -t node-api .
+
+# Run locally
+docker run -p 3000:3000 node-api
+
+# Deploy to K8s (Minikube)
+kubectl apply -f k8s/deployment.yaml
+kubectl apply -f k8s/service.yaml
+```
 
 
 ## 📸 Screenshots
